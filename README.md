@@ -1,12 +1,5 @@
-Running the dev environment:
-
-```
-mvn spring-boot:run
-```
-
 Building docker image:
 ```
-mvn clean package
 docker build -t squix78/displaytools:latest .
 ```
 
