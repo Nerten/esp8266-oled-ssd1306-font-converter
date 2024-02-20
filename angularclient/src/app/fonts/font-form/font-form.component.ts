@@ -70,7 +70,7 @@ export class FontFormComponent implements OnInit  {
 
   downloadFile(): void {
     const a = document.createElement("a");
-    a.href = "data:text/plain," + this.pixelFont.fontArray;
+    a.href = "data:text/plain," + encodeURIComponent(this.pixelFont.fontArray);
     let filename = this.pixelFont.fileName;
     a.setAttribute("download", filename);
     document.body.appendChild(a);
