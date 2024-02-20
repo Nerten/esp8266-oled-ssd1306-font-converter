@@ -14,12 +14,12 @@ import { Dictionary } from 'src/app/shared/dictionary';
 export class FontFormComponent implements OnInit  {
   fontForm = this.fb.group({
     previewDisplay: 'OLED96',
-    name: 'Dialog',
+    name: 'Unifont',
     style: '0',
     size: '16',
     libVersion: '3',
   });
-  
+
 
   hasUnitNumber = false;
 
@@ -82,9 +82,9 @@ export class FontFormComponent implements OnInit  {
 
   getImageUrl(): string {
     let formValue = this.fontForm.value;
-    return '/rest/fontPreview/' + formValue.name 
+    return '/rest/fontPreview/' + formValue.name
     + '/' + formValue.style + '/'+ formValue.size +'/' + formValue.previewDisplay;
-    
+
   }
 
   onBeer(): void {

@@ -44,7 +44,7 @@ public class FontPreviewResource {
         Rectangle clipRect = previewDisplay.getClipRect();
         graphics.setClip(clipRect.x, clipRect.y, clipRect.width, clipRect.height);
 
-        drawString(graphics, "ABC abc 123 $€°. The quick brown fox jumps over the lazy dog.", clipRect.x,
+        drawString(graphics, "Є є Ї ї І і Ґ ґ Факт ґринджол: бій псюг вщух, з’їм шче яєць.", clipRect.x,
                 clipRect.y + graphics.getFontMetrics().getAscent(), clipRect.width);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         ImageIO.write(newImage, "png", baos);

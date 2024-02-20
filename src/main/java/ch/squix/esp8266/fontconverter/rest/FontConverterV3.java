@@ -153,7 +153,19 @@ public class FontConverterV3 {
     public List<LetterData> produceLetterDataList() {
         ArrayList<LetterData> letterDataList = new ArrayList<>(END_CHAR - START_CHAR);
         for (char i = START_CHAR; i < END_CHAR; i++) {
-            letterDataList.add(createLetterData(i));
+            if (i == 168) letterDataList.add(createLetterData((char) (1025))); //Ё
+            else if (i == 184) letterDataList.add(createLetterData((char) (1105))); //ё
+            else if (i == 186) letterDataList.add(createLetterData((char) (1108))); //є
+            else if (i == 170) letterDataList.add(createLetterData((char) (1028))); //Є
+            else if (i == 191) letterDataList.add(createLetterData((char) (1111))); //ї  
+            else if (i == 175) letterDataList.add(createLetterData((char) (1031))); //Ї
+            else if (i == 178) letterDataList.add(createLetterData((char) (1030))); //І
+            else if (i == 179) letterDataList.add(createLetterData((char) (1110))); //і
+            else if (i == 180) letterDataList.add(createLetterData((char) (1169))); //ґ
+            else if (i == 165) letterDataList.add(createLetterData((char) (1168))); //Ґ
+            else if ((i > 126)&&(i < 160)) letterDataList.add(createLetterData((char) (32))); // clean unused symbols to space
+            else if (i < 192) letterDataList.add(createLetterData(i));
+            else letterDataList.add(createLetterData((char) (i + 848)));        
         }
         return letterDataList;
     }
