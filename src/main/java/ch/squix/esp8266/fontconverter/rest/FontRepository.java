@@ -197,8 +197,8 @@ public class FontRepository {
         "/orbitron/Orbitron-Black.ttf",
         "/orbitron/Orbitron-Bold.ttf",
         "/orbitron/Orbitron-Medium.ttf",
-        "/orbitron/Orbitron-Regular.ttf"
-        "/unifont/unifont-15.0.06.ttf"
+        "/orbitron/Orbitron-Regular.ttf",
+        "/unifont/unifont-15.0.06.ttf",
     };
 
     @Bean 
