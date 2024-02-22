@@ -219,6 +219,10 @@ public class FontRepository {
         "/ubuntu/UbuntuMono-BI.ttf",
         "/ubuntu/UbuntuMono-R.ttf",
         "/ubuntu/UbuntuMono-RI.ttf",
+        "/terminus/TerminusTTF-4.49.3.ttf",
+        "/terminus/TerminusTTF-Bold-4.49.3.ttf",
+        "/terminus/TerminusTTF-Bold-Italic-4.49.3.ttf",
+        "/terminus/TerminusTTF-Italic-4.49.3.ttf",
     };
 
     @Bean 
