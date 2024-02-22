@@ -1,9 +1,6 @@
-FROM maven:3.9-eclipse-temurin-17-alpine AS build  
-COPY . /usr/src/app/  
-#COPY pom.xml /usr/src/app  
-RUN mvn -f /usr/src/app/pom.xml clean package
-
-
+FROM maven:3.9-eclipse-temurin-17-alpine AS build
+COPY . /usr/src/app/
+RUN --mount=type=cache,target=/root/.m2 mvn -f /usr/src/app/pom.xml clean package
 
 FROM openjdk:17-jdk-alpine
 RUN apk add --no-cache fontconfig ttf-dejavu
