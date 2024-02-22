@@ -199,6 +199,12 @@ public class FontRepository {
         "/orbitron/Orbitron-Medium.ttf",
         "/orbitron/Orbitron-Regular.ttf",
         "/unifont/unifont-15.0.06.ttf",
+        "/e-Ukraine/e-Ukraine-Bold.otf",
+        "/e-Ukraine/e-Ukraine-Light.otf",
+        "/e-Ukraine/e-Ukraine-Medium.otf",
+        "/e-Ukraine/e-Ukraine-Regular.otf",
+        "/e-Ukraine/e-Ukraine-Thin.otf",
+        "/e-Ukraine/e-Ukraine-UltraLight.otf",
     };
 
     @Bean 
