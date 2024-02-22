@@ -87,10 +87,6 @@ export class FontFormComponent implements OnInit  {
 
   }
 
-  onBeer(): void {
-    window.open("https://www.paypal.com/paypalme/squix78");
-  }
-
   getFontArray(): string {
     return this.pixelFont.fontArray;
   }

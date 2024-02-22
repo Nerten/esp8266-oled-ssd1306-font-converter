@@ -2,6 +2,9 @@
   <mat-card class="font-card">
     <mat-card-header>
       <mat-card-title>Font Converter (UA version)</mat-card-title>
+      <mat-card-subtitle>
+        <p>This version developed on <a href="https://github.com/squix78/esp8266-oled-ssd1306-font-converter/" target="_blank">original version</a> by <a href="https://github.com/squix78">squix78</a> with <a href="https://github.com/lorol/esp8266-oled-ssd1306/blob/f2066d5a8c919f34ba570bc488581f052a7856fd/resources/FontConverterV3/src/FontConverterV3.java#L205C1-L209C77" target="_blank">changes</a> implemented by <a href="https://github.com/lorol">lorol</a>. The authors deserve full credit for their work. We have made additional changes to include Ukrainian characters such as Ґ, ґ, Є, є, І, і, Ї, and ї. These characters are now fully supported and can be used without any issues.</p>
+      </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
     <div class="row">
@@ -81,7 +84,6 @@
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button color="primary" type="submit">Generate</button>&nbsp;
-      <button mat-raised-button color="warn" (click)="onBeer()">Say Thanks: Teleport a Beer</button>
     </mat-card-actions>
 
   </mat-card>
@@ -96,7 +98,7 @@
     <mat-form-field style="width: 100%;">
       <textarea matInput rows="5" cols="40" placeholder="" cdkTextareaAutosize [(ngModel)]="pixelFont.fontArray"></textarea>
     </mat-form-field>
-  
+
   </mat-card-content>
 
 </mat-card>
