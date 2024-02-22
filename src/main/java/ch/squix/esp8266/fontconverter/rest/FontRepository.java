@@ -205,6 +205,20 @@ public class FontRepository {
         "/e-Ukraine/e-Ukraine-Regular.otf",
         "/e-Ukraine/e-Ukraine-Thin.otf",
         "/e-Ukraine/e-Ukraine-UltraLight.otf",
+        "/ubuntu/Ubuntu-B.ttf",
+        "/ubuntu/Ubuntu-BI.ttf",
+        "/ubuntu/Ubuntu-C.ttf",
+        "/ubuntu/Ubuntu-L.ttf",
+        "/ubuntu/Ubuntu-LI.ttf",
+        "/ubuntu/Ubuntu-M.ttf",
+        "/ubuntu/Ubuntu-MI.ttf",
+        "/ubuntu/Ubuntu-R.ttf",
+        "/ubuntu/Ubuntu-RI.ttf",
+        "/ubuntu/Ubuntu-Th.ttf",
+        "/ubuntu/UbuntuMono-B.ttf",
+        "/ubuntu/UbuntuMono-BI.ttf",
+        "/ubuntu/UbuntuMono-R.ttf",
+        "/ubuntu/UbuntuMono-RI.ttf",
     };
 
     @Bean 
